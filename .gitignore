@@ -1,0 +1,7 @@
+.qa/
+node_modules/
+.DS_Store
+
+# Private source material used to prepare the public website
+Shs USD-0918.docx
+72aca9bc-8881-4b4a-9450-f4446f7bd2bc.jpg
