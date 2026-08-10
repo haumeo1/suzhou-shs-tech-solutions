@@ -4,6 +4,9 @@ const navigation = document.querySelector('.site-nav');
 
 const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 24);
 updateHeader();
+requestAnimationFrame(updateHeader);
+window.addEventListener('load', updateHeader);
+window.addEventListener('hashchange', () => requestAnimationFrame(updateHeader));
 window.addEventListener('scroll', updateHeader, { passive: true });
 
 menuButton.addEventListener('click', () => {
